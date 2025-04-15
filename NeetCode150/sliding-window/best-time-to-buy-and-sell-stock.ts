@@ -8,4 +8,13 @@ function maxProfit(prices: number[]): number {
   }
 
   return profit;
+
+  /*
+  we begin setting the lowest price with the first number in the input array
+  and setting the profit to zero, and after that, looping through its length
+  and comparing each value to the lowest, replacing it if its lower and also
+  calculating the profit. the lowest value will be kept set to its first ocurrence,
+  while the profit will be reevaluated in with each entry, guaranteeing its
+  being calculated with its sell value AFTER the buy value
+  */
 }
